@@ -3,81 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Academic Website</title>
+    <meta name="description" content="Academic profile of Professor at Yale University School of Medicine">
+    <title>Your Name | Yale School of Medicine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        :root {
+            --global-text-color: #111;
+            --global-theme-color: #B31B1B;
+            --global-hover-color: #721515;
+            --global-footer-bg-color: #424242;
+            --global-footer-text-color: #e8e8e8;
+            --global-bg-color: #ffffff;
+            --global-code-bg-color: rgba(181, 9, 172, 0.05);
+            --global-text-color-light: #666;
+            --global-divider-color: rgba(0,0,0,.1);
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1rem;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: var(--global-bg-color);
+            color: var(--global-text-color);
+            line-height: 1.5;
         }
+        
         .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
+        
         header {
             text-align: center;
+            margin-bottom: 30px;
         }
+        
+        /* Profile section styling */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--global-bg-color);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        
+        .profile-name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin: 10px 0 5px;
+            color: var(--global-text-color);
+        }
+        
+        .profile-title {
+            font-size: 1.25rem;
+            color: var(--global-text-color-light);
+            margin: 0 0 15px;
+        }
+        
+        /* Navigation */
         nav {
+            margin: 40px 0;
+            border-top: 1px solid var(--global-divider-color);
+            border-bottom: 1px solid var(--global-divider-color);
+            padding: 10px 0;
             text-align: center;
-            margin-top: 10px;
         }
+        
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            color: var(--global-text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: inline-block;
+            padding: 5px 0;
+            position: relative;
         }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 3px;
+            right: 0;
+            background: var(--global-theme-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        
+        nav a:hover {
+            color: var(--global-theme-color);
+        }
+        
+        /* Section styling */
         section {
-            margin-top: 20px;
+            margin: 60px 0;
         }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            color: var(--global-text-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--global-divider-color);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* News section */
+        .news-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .news-date {
+            min-width: 120px;
+            color: var(--global-text-color-light);
+        }
+        
+        /* Publications styling */
+        .publications-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .publication-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--global-divider-color);
+        }
+        
+        .publication-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .publication-journal {
+            color: var(--global-text-color-light);
+            margin-bottom: 5px;
+        }
+        
+        .publication-links a {
+            color: var(--global-theme-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Tags styling */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        
+        .tag {
+            background-color: var(--global-code-bg-color);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            color: var(--global-text-color);
+        }
+        
+        /* Projects styling */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid var(--global-divider-color);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .project-card-body {
+            padding: 15px;
+        }
+        
+        .project-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Social icons */
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .social a {
+            color: var(--global-text-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social a:hover {
+            color: var(--global-theme-color);
+        }
+        
+        /* Footer styling */
         footer {
+            background-color: var(--global-footer-bg-color);
+            color: var(--global-footer-text-color);
+            padding: 20px 0;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            background: #ddd;
+            margin-top: 80px;
+        }
+        
+        footer .container {
+            padding: 20px;
+        }
+        
+        footer a {
+            color: var(--global-footer-text-color);
+            text-decoration: underline;
+        }
+        
+        footer a:hover {
+            color: #fff;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p>Assistant Professor of Medicine | Yale University School of Medicine </p>
+        <header class="profile">
+            <img src="/api/placeholder/150/150" alt="Your Name" class="profile-img">
+            <h1 class="profile-name">Your Name</h1>
+            <p class="profile-title">Assistant Professor of Medicine<br>Yale University School of Medicine</p>
+            
+            <div class="social">
+                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
         </header>
+        
         <nav>
             <a href="#about">About</a>
+            <a href="#news">News</a>
             <a href="#research">Research</a>
-            <a href="#teaching">Teaching</a>
             <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        
         <section id="about">
-            <h2>About Me</h2>
-            <p>Brief bio about your research interests, background, and current work.</p>
+            <h2>About</h2>
+            <p>I am an Assistant Professor of Medicine at Yale University School of Medicine specializing in [your research area]. My research focuses on [brief description of research focus].</p>
+            <p>I received my MD from [University Name] and completed my residency at [Institution Name], followed by a fellowship in [Specialty] at [Institution Name]. I am particularly interested in [specific research interests].</p>
+            
+            <div class="tags">
+                <span class="tag">Epidemiology</span>
+                <span class="tag">Public Health</span>
+                <span class="tag">Clinical Research</span>
+                <span class="tag">Health Disparities</span>
+                <span class="tag">Precision Medicine</span>
+            </div>
         </section>
+        
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <div class="news-date">Mar 15, 2025</div>
+                <div>Our paper on [research topic] has been accepted to [journal name]!</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">Feb 10, 2025</div>
+                <div>Received [grant/award name] to study [research topic].</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">Jan 5, 2025</div>
+                <div>Presenting at [conference name] on [presentation topic].</div>
+            </div>
+        </section>
+        
         <section id="research">
             <h2>Research</h2>
-            <p>Overview of your research projects and focus areas.</p>
+            <p>My research program aims to [overall research goal]. I lead the [Lab/Research Group Name], where we investigate various aspects of [research field].</p>
+            
+            <h3>Research Interests</h3>
+            <ul>
+                <li><strong>Interest Area 1:</strong> Brief description of this research interest.</li>
+                <li><strong>Interest Area 2:</strong> Brief description of this research interest.</li>
+                <li><strong>Interest Area 3:</strong> Brief description of this research interest.</li>
+            </ul>
+            
+            <h3>Current Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/300/150" alt="Project 1">
+                    <div class="project-card-body">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of this research project and its significance.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/300/150" alt="Project 2">
+                    <div class="project-card-body">
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of this research project and its significance.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <div class="publication-title">Title of Publication 1</div>
+                    <div class="publication-authors">Author 1, Author 2, <strong>Your Name</strong>, Author 4</div>
+                    <div class="publication-journal">Journal Name (Year)</div>
+                    <div class="publication-links">
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-link"></i> DOI</a>
+                        <a href="#"><i class="fas fa-code"></i> Code</a>
+                        <a href="#"><i class="fas fa-database"></i> Data</a>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">Title of Publication 2</div>
+                    <div class="publication-authors"><strong>Your Name</strong>, Author 2, Author 3</div>
+                    <div class="publication-journal">Journal Name (Year)</div>
+                    <div class="publication-links">
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">Title of Publication 3</div>
+                    <div class="publication-authors">Author 1, <strong>Your Name</strong>, Author 3, Author 4</div>
+                    <div class="publication-journal">Journal Name (Year)</div>
+                    <div class="publication-links">
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </li>
+            </ul>
+            <p>See my <a href="#" style="color: var(--global-theme-color);">Google Scholar profile</a> for a complete list of publications.</p>
+        </section>
+        
         <section id="teaching">
             <h2>Teaching</h2>
-            <p>Courses you teach, including <em>Advanced Applied Analytic Methods in Epidemiology and Public Health</em>.</p>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>List of selected publications with links.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@university.edu</p>
-        </section>
-        <footer>
-            <p>&copy; 2025 Your Name | Designed for academic visibility</p>
-        </footer>
-    </div>
-</body>
-</html>
+            <h3>Courses</h3>
+            <ul
