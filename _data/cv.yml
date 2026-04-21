@@ -1,189 +1,163 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Haidong Lu
+  label: Assistant Professor of Medicine and Epidemiology, Yale University
+  email: haidong.lu@yale.edu
+  location: New Haven, CT
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >
+    Assistant Professor of Medicine (General Medicine) and Epidemiology (Chronic Diseases) at Yale. PI of the LUCID Lab.
+    Research at the intersection of causal inference, pharmacoepidemiology, and real-world evidence — with applications in
+    substance use, HIV/AIDS, and comparative effectiveness of medications.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: Haidong-Lu
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    street: 367 Cedar Street
+    city: New Haven
+    region: Connecticut
+    postalCode: "06510"
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: University of North Carolina at Chapel Hill — Gillings School of Global Public Health
+        location: Chapel Hill, NC
+        url: https://sph.unc.edu/
+        area: Epidemiology (Formal Minor in Biostatistics)
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+        start_date: 2016
+        end_date: 2020
+
+      - institution: Johns Hopkins Bloomberg School of Public Health
+        location: Baltimore, MD
+        url: https://publichealth.jhu.edu/
+        area: Epidemiology
+        studyType: MHS
+        start_date: 2014
+        end_date: 2016
+
+      - institution: Xi'an Jiaotong University
+        location: Xi'an, China
+        area: Pharmacy
+        studyType: Pharmacy Degree
+        start_date: 2009
+        end_date: 2014
+
+    Appointments:
+      - company: Yale University
+        position: Assistant Professor of Medicine and Epidemiology
+        location: New Haven, CT
+        start_date: 2025
+        end_date: present
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Primary: YSM Section of General Internal Medicine"
+          - "Secondary: YSPH Department of Chronic Disease Epidemiology"
+          - "Affiliated: Yale Program in Addiction Medicine; Yale Institute for Foundations of Data Science; YSPH Public Health Modeling Unit; Yale Janeway Society"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - company: VA Connecticut Healthcare System
+        position: Research Statistician
+        location: West Haven, CT
+        start_date: 2021
+        end_date: present
         highlights:
-          - Description 1.
-          - Description 2.
+          - "VA Cooperative Studies Program (CSP)"
+          - "VA Connecticut Research and Development"
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Yale School of Medicine
+        position: Instructor (K99 Scholar)
+        location: New Haven, CT
+        start_date: 2023
+        end_date: 2024
         highlights:
-          - Relativity
-          - Description 2.
+          - "Program in Addiction Medicine; Section of General Internal Medicine; Department of Internal Medicine"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Yale School of Public Health
+        position: Postdoctoral Associate
+        location: New Haven, CT
+        start_date: 2020
+        end_date: 2023
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Public Health Modeling Unit"
+          - "Department of Epidemiology of Microbial Diseases"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+    "Grants (Selected)":
+      - title: NIH/NIDA R00DA057487 — PI
+        authors: Haidong Lu (PI)
+        date: 2025-07 to 2028-06
+        awarder: National Institute on Drug Abuse
+        summary: "Evaluating and Optimizing Care for Opioid Use Disorder using a Structured Data-Science Approach. Total costs: $747,000."
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+      - title: VA-FDA Interagency Agreement (BOOST) — Co-I
+        authors: A. Black & A. Gordon (PIs); H. Lu (Co-I)
+        date: 2024-10 to 2027-09
+        awarder: Department of Veterans Affairs / FDA
+        summary: "Buprenorphine dosing for OUD outcomes and studying treatment episodes."
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+      - title: NIH/NIDA K99DA057487 — PI (completed)
+        authors: Haidong Lu (PI)
+        date: 2023-02 to 2025-06
+        awarder: National Institute on Drug Abuse
+        summary: "K99 phase of the K99/R00 Pathway to Independence Award."
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+    "Awards & Honors":
+      - title: AI Course Revision Grant (Tier 2), Yale University
+        date: 2025
+      - title: Exemplary Reviewer of the Year, Epidemiology
+        date: 2024
+      - title: Early Career Best Paper — Runner-up, American College of Epidemiology
+        date: 2024
+      - title: Yale-Mayo Clinic CERSI Scholar
+        date: 2024
+      - title: Member, Yale Janeway Society
+        date: 2023 to present
+      - title: NIH/NIDA K99/R00 Pathway to Independence Award
+        date: 2023 to 2028
+      - title: SER Lilienfeld Postdoctoral Prize Paper Award — Finalist (Top 5)
+        date: 2023
+      - title: ViiV Healthcare Fellowship, UNC-Chapel Hill
+        date: 2019 to 2020
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+    "Editorial Service":
+      - title: Associate Editor, Epidemiologic Methods
+        date: 2024 to present
+      - title: Associate Editor, AJE Advances — Research in Epidemiology
+        date: 2024 to present
+      - title: Editorial Board Member, Pharmacoeconomics & Policy
+        date: 2024 to present
+      - title: Statistical Editor, Journal of Addiction Medicine
+        date: 2025 to present
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    "Leadership":
+      - title: Co-founder, Yale Pharmacoepidemiology Working Group (PEW)
+        date: 2024 to present
+      - title: Co-chair, VACS Design and Analysis Core
+        date: 2024 to present
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+    "Teaching":
+      - institution: Yale School of Public Health
+        area: "CDE 634: Advanced Applied Analytic Methods in Epidemiology and Public Health"
+        position: Instructor
+        start_date: Fall 2025
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - institution: Yale School of Public Health
+        area: "Big Data Summer Immersion at Yale (BDSY); EMD 582b Political Epidemiology"
+        position: Guest lecturer
+        start_date: 2024
+        end_date: 2026
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+    "Professional Memberships":
+      - title: Society for Epidemiologic Research (SER)
+        date: 2015 to present
+      - title: American Statistical Association (ASA)
+        date: 2015 to present
+      - title: Society for Causal Inference (SCI)
+        date: 2022 to present
+      - title: International Society for Pharmacoepidemiology (ISPE)
+        date: 2022 to present
+      - title: The College on Problems of Drug Dependence (CPDD)
+        date: 2024 to present
 
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    "Computer Skills":
+      - title: R, SAS, Python, Stata, LaTeX, ArcGIS, SQL

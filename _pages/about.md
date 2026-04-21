@@ -2,33 +2,36 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Assistant Professor of Medicine and Epidemiology, <a href='https://medicine.yale.edu/profile/haidong-lu/'>Yale School of Medicine</a>. PI, <a href='/lab/'>LUCID Lab</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><strong>Yale School of Medicine</strong></p>
+    <p>367 Cedar Street</p>
+    <p>New Haven, CT 06510</p>
+    <p><a href="mailto:haidong.lu@yale.edu">haidong.lu@yale.edu</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an Assistant Professor of Medicine and Epidemiology at Yale, with a primary appointment in the [Section of General Internal Medicine](https://medicine.yale.edu/intmed/genmed/) and a secondary appointment in the [Department of Chronic Disease Epidemiology](https://ysph.yale.edu/public-health-research-and-practice/departments/chronic-disease-epidemiology/) at the Yale School of Public Health. I am affiliated with the [Yale Program in Addiction Medicine](https://medicine.yale.edu/intmed/genmed/addictionmedicine/), the [Yale Institute for Foundations of Data Science](https://fds.yale.edu/), and the YSPH Public Health Modeling Unit. I also serve as a Research Statistician at the VA Connecticut Healthcare System.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I lead the **[LU Causal Intelligence and Data Lab (LUCID Lab)](/lab/)**. My research bridges epidemiology, statistics, and data science — developing and applying **causal-inference methods to observational health data** to generate real-world evidence that can inform clinical decision-making. Substantive areas include **substance use**, **HIV/AIDS**, and **pharmacoepidemiology / comparative effectiveness research**. Methodological interests include target trial emulation, selection bias, generalizability and representativeness, heterogeneous treatment effects, and machine learning for causal questions.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I trained in Epidemiology at the [UNC Gillings School of Global Public Health](https://sph.unc.edu/) (PhD, 2020; minor in Biostatistics) and at the [Johns Hopkins Bloomberg School of Public Health](https://publichealth.jhu.edu/) (MHS, 2016). My research is currently supported by an [NIH/NIDA K99/R00 Pathway to Independence Award](https://reporter.nih.gov/).
+
+I am always happy to hear from prospective students, postdocs, and collaborators — please reach out by [email](mailto:haidong.lu@yale.edu).
