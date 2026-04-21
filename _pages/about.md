@@ -32,6 +32,6 @@ I am an Assistant Professor of Medicine and Epidemiology at Yale, with a primary
 
 I lead the **[LU Causal Intelligence and Data Lab (LUCID Lab)](/lab/)**. My research bridges epidemiology, statistics, and data science — developing and applying **causal-inference methods to observational health data** to generate real-world evidence that can inform clinical decision-making. Substantive areas include **substance use**, **HIV/AIDS**, and **pharmacoepidemiology / comparative effectiveness research**. Methodological interests include target trial emulation, selection bias, generalizability and representativeness, heterogeneous treatment effects, and machine learning for causal questions.
 
-I trained in Epidemiology at the [UNC Gillings School of Global Public Health](https://sph.unc.edu/) (PhD, 2020; minor in Biostatistics) and at the [Johns Hopkins Bloomberg School of Public Health](https://publichealth.jhu.edu/) (MHS, 2016). My research is currently supported by an [NIH/NIDA K99/R00 Pathway to Independence Award](https://reporter.nih.gov/).
+I trained in Epidemiology at the [UNC Gillings School of Global Public Health](https://sph.unc.edu/) (PhD, 2020; minor in Biostatistics). My research is currently supported by an [NIH/NIDA K99/R00 Pathway to Independence Award](https://reporter.nih.gov/).
 
 I am always happy to hear from prospective students, postdocs, and collaborators — please reach out by [email](mailto:haidong.lu@yale.edu).
