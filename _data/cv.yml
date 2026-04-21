@@ -30,21 +30,6 @@ cv:
         start_date: 2016
         end_date: 2020
 
-      - institution: Johns Hopkins Bloomberg School of Public Health
-        location: Baltimore, MD
-        url: https://publichealth.jhu.edu/
-        area: Epidemiology
-        studyType: MHS
-        start_date: 2014
-        end_date: 2016
-
-      - institution: Xi'an Jiaotong University
-        location: Xi'an, China
-        area: Pharmacy
-        studyType: Pharmacy Degree
-        start_date: 2009
-        end_date: 2014
-
     Appointments:
       - company: Yale University
         position: Assistant Professor of Medicine and Epidemiology
