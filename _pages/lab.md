@@ -2,12 +2,12 @@
 layout: page
 permalink: /lab/
 title: lab
-description: LU Causal Intelligence and Data Lab (LUCID Lab) at Yale.
+description: LU Causal Intelligence & Data Lab (LUCID Lab) at Yale.
 nav: true
 nav_order: 3
 ---
 
-## LU Causal Intelligence and Data Lab (LUCID Lab)
+## LU Causal Intelligence & Data Lab (LUCID Lab)
 
 The **LUCID Lab** is based at Yale, jointly housed across the [Section of General Internal Medicine](https://medicine.yale.edu/intmed/genmed/) (Yale School of Medicine) and the [Department of Chronic Disease Epidemiology](https://ysph.yale.edu/public-health-research-and-practice/departments/chronic-disease-epidemiology/) (Yale School of Public Health). We are also affiliated with the [Yale Program in Addiction Medicine](https://medicine.yale.edu/intmed/genmed/addictionmedicine/) and the [Yale Institute for Foundations of Data Science](https://fds.yale.edu/).
 
