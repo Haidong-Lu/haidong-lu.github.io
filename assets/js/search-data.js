@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-lab",
           title: "lab",
-          description: "LU Causal Intelligence and Data Lab (LUCID Lab) at Yale.",
+          description: "LU Causal Intelligence &amp; Data Lab (LUCID Lab) at Yale.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/lab/";
